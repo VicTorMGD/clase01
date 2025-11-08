@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3</title>
+</head>
+<body>
+    <H1>TAREA 03</H1>
+    <div>
+        <div>
+            <input type="number" id="input-text" placeholder="Ingresa un numero">    
+        </div>
+        <BR></BR>
+        <div>
+            <button id="btn-alert" class="btn">verificar</button>
+        </div>
+    </div>
+
+    <script>
+        const btnAlert = document.querySelector('#btn-alert');
+        const inputText = document.querySelector('#input-text');
+
+        btnAlert.addEventListener('click', () => {
+            const valor = inputText.value;
+            const numero1 = 9;
+            const numero2 = 51;
+            let mensajeValido = `El numero ingresado : ${valor} está entre ${numero1} y ${numero2}.`;
+            let mensajeInvalido = `El numero ingresaso: ${valor} No está entre ${numero1} y ${numero2}.`;
+
+            let ElMensaje = ((valor > numero1) && (valor < numero2)) ? mensajeValido : mensajeInvalido;
+            alert(ElMensaje);
+            
+
+            /*
+            if ((valor > numero1) && (valor < numero2)) {
+                alert(`El numero ingresado : ${valor} está entre ${numero1} y ${numero2}.`);
+            } else {
+                alert(`El numero ingresaso: ${valor} No está entre ${numero1} y ${numero2}.`);
+            }
+            */
+            });
+    </script>
+
+    <p>
+        Pida al usuario ingresar un número.
+        Verifique si está dentro de un rango (por ejemplo, entre 10 y 50).
+        Muestre un mensaje según el resultado.
+    </p>
+    
+</body>
+</html>

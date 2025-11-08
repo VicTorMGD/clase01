@@ -32,8 +32,31 @@ btnChangeColor.addEventListener('click', () => {
     }
     console.log('paso');
     
+    const x = numero % 2 === 0;
+
 
 });
 
 const miDiv = document.querySelector('#miDiv');
 miDiv.innerHTML += "<p>Este es un párrafo agregado desde JavaScript</p>";
+
+
+
+if((valor > 10) && (valor % 2 == 0)){
+    console.log ("Valor valido",valor);
+    } else {
+        console.log ("Valor no valido",valor);
+    }
+
+const numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+
+for (let i = 0; i < numeros.length; i++) {
+  console.log(numeros[i]);
+}
+
+numeros.forEach((ele) =>{
+    console.log(ele);
+});
+
+
+let valor = prompt("Ingresa un número:");
