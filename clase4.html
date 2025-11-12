@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-    <title>Clase 3</title>
+    <title>Clase 4</title>
 </head>
 <body>
     <div class="section">
-        <H1>TAREA 03</H1>
+        <H1>Bucles</H1>
         <div>
             <div>
                 <input type="number" id="input-text" placeholder="Ingresa un numero">    
@@ -27,24 +27,13 @@
         const inputText = document.querySelector('#input-text');
 
         btnAlert.addEventListener('click', () => {
-            const valor = inputText.value;
-            const numero1 = 9;
-            const numero2 = 51;
-            let mensajeValido = `El numero ingresado : ${valor} está entre ${numero1} y ${numero2}.`;
-            let mensajeInvalido = `El numero ingresaso: ${valor} No está entre ${numero1} y ${numero2}.`;
-
-            let ElMensaje = ((valor > numero1) && (valor < numero2)) ? mensajeValido : mensajeInvalido;
-            alert(ElMensaje);
+            const lista2=[9,8,7,6,5];
+            for (let i = 0; i < lista2.length; i++) {
+                alert(`Elemento en la posición ${i}: ${lista2[i]}`);
             
-
-            /*
-            if ((valor > numero1) && (valor < numero2)) {
-                alert(`El numero ingresado : ${valor} está entre ${numero1} y ${numero2}.`);
-            } else {
-                alert(`El numero ingresaso: ${valor} No está entre ${numero1} y ${numero2}.`);
             }
-            */
-            });
+          
+        });
     </script>
 
     <p>
@@ -52,6 +41,15 @@
         Verifique si está dentro de un rango (por ejemplo, entre 10 y 50).
         Muestre un mensaje según el resultado.
     </p>
+
+    <script>
+        for (let i=1; i<=12; i++ ){
+            for (let j=1; j<=12; j++ ){
+            console.log(`| ${j} x ${i} = ${j*i}    |`)
+            }  
+            console.log(`------------------`)
+        }
+    </script>
     
 </body>
 </html>
